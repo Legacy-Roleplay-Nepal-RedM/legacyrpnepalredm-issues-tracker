@@ -1,0 +1,99 @@
+name: Bug Report
+description: A bug has been found in OPFW
+labels: ["bug"]
+title: "Bug report - "
+body:
+  - type: markdown
+    attributes:
+      value: "Before opening a new issue, please search existing issues:  https://github.com/InZidiuZ/op-framework-issue-tracker/issues"
+  - type: markdown
+    attributes:
+      value: "Are you sure your bug report is **script** related? If you are unsure, read [this explanation](https://github.com/InZidiuZ/op-framework-issue-tracker/blob/master/README.md#whats-the-difference-between-script-and-asset-issues)."
+  - type: dropdown
+    id: assurance
+    attributes:
+      label: Assurance
+      description: Have you read through the rules from the `README.md` file in the root folder of this GitHub repository?
+      options:
+        - I have read the `README.md`
+    validations:
+      required: true
+  - type: input
+    id: reporter
+    attributes:
+      label: Reporter
+      description: Who is reporting this? Please include discord name.
+      placeholder: John (John#0001)
+    validations:
+      required: true          
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Write a short summary of what you are experiencing.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Include what steps that are needed in order to reproduce this issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What are the expected results?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Results
+      description: What are the actual results?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Videos
+      description: Provide any screenshots and/or videos demonstrating the issue being experienced.
+    validations:
+      required: false
+  - type: input
+    id: game
+    attributes:
+      label: Game Resolution
+      description: What is your games resolution?
+    validations:
+      required: false
+  - type: textarea
+    id: playerdata
+    attributes:
+      label: Player Data
+      description: Write '/info' whilst in-game and provide a screenshot of the information you are prompted.
+    validations:
+      required: false      
+  - type: dropdown
+    id: server
+    attributes:
+      label: Server
+      description: What server/community did this issue occur in?
+      multiple: true
+      options:
+      - OP-FW Test Server (c2)
+      - International (c3)
+      - Latin America (c4)
+      - Italy (c5)
+      - Poland (c6)
+      - Pakistan (c7)
+      - India (c8/c9)
+      - Bangladesh (c10)
+      - Nepal (c13)
+      - South Korea (c15)
+      - Estonia (c16)
+      - Mexico (c25)
+      - Other OP-FW server
+    validations:
+      required: true          
