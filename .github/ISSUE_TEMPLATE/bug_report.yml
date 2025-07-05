@@ -39,21 +39,21 @@ body:
       label: Steps to Reproduce
       description: Include what steps that are needed in order to reproduce this issue.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: expected
     attributes:
       label: Expected Behavior
       description: What are the expected results?
     validations:
-      required: true
+      required: false
   - type: textarea
     id: actual
     attributes:
       label: Actual Results
       description: What are the actual results?
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:
@@ -72,7 +72,7 @@ body:
     id: playerdata
     attributes:
       label: Player Data
-      description: Write '/info' whilst in-game and provide a screenshot of the information you are prompted.
+      description: Give your Player Data
     validations:
       required: false      
   - type: dropdown
@@ -80,7 +80,7 @@ body:
     attributes:
       label: Server
       description: What server/community did this issue occur in?
-      multiple: true
+      multiple: false
       options:
       - Legacy Roleplay Nepal RedM
     validations:
